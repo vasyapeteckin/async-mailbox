@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "async_mailbox"
+version = "0.1.0"
+authors = ["vasyapeteckin@tuta.io"]
+description = "An async Python tool to connect to IMAP mailboxes, retrieve emails, and process email content."
+homepage = "https://github.com/vasyapeteckin/async-mailbox"
+repository = "https://github.com/vasyapeteckin/async-mailbox"
+keywords = ["http", "async", "client", "curl_cffi", "proxy"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aioimaplib = "^1.1.0"
+
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.masonry.api"
