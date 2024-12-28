@@ -1,0 +1,21 @@
+version = 1
+requires-python = ">=3.13"
+
+[[package]]
+name = "aioimaplib"
+version = "1.1.0"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d1/b4/eae817881d3fd50f1183e5872c4271e00d43fd906f03c61fa1b198a7eefe/aioimaplib-1.1.0-py3-none-any.whl", hash = "sha256:927b1d24b58e2fd918037bcb4b8dd7f6d42a111ee409969a7c472ed66c5b670f", size = 22684 },
+]
+
+[[package]]
+name = "async-mailbox"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "aioimaplib" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "aioimaplib", specifier = ">=1.1.0" }]
